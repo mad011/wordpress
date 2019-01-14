@@ -6,12 +6,17 @@
             'posts_per_page' => 2,
 
         );
+        $categories = get_the_category();
+        foreach( $categories as $category){
+            echo $category->name."<br>";
+//            echo category_description($category);
+        }
         $wp_query = new WP_Query($args);
 
         if ($wp_query->have_posts()):
 
             while ($wp_query->have_posts()): the_post(); ?>
-
+            <?php the_category(); ?>
 
             <?php endwhile; ?>
 
