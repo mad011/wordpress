@@ -1,0 +1,39 @@
+body {
+    background: antiquewhite;
+    margin: 0;
+}
+header.main-header{
+
+}
+div#masthead{
+    display: flex;
+    width: 100%;
+    height: 200px
+}
+.menu{
+display: flex;
+justify-content: flex-end;
+width:100%;
+}
+
+ul#menu-first-menu{
+    display: flex;
+    align-items:center;
+    height:100%;
+}
+ul#menu-first-menu li{
+    padding: 1rem;
+}
+.header-image{
+    position: relative;
+    display: block;
+}
+
+img.custom-logo{
+    width:100px;
+    height:100px;
+}
+.my_extra_menu_class{
+    height:100%;
+}
+
